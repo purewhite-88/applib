@@ -1,0 +1,19 @@
+ai:
+  api_key: null
+  base_url: null
+  repaired: []
+api:
+  base_url: null
+  headers: null
+ocr:
+  api_key: null
+  app_id: null
+  secret_key: null
+web:
+  browser: chrome
+  headers: null
+  headless: false
+  maximized: false
+  state: null
+  web_url: null
+  window_size: null

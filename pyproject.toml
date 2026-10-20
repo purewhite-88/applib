@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kyapp"
+version = "0.0.22"
+description = "安卓/IOS自动化测试框架"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "杨康", email = "772840356@qq.com"}]
+classifiers = ["Programming Language :: Python :: 3.9"]
+dependencies = [
+  "click==8.1.7",
+  "loguru==0.7.0",
+  "PyYAML==6.0.1",
+  "allure-pytest==2.9.45",
+  "pytest==6.2.5",
+  "uiviewer==1.1.3",
+  "uiautomator2==3.2.4",
+  "tidevice==0.12.10",
+  "facebook-wda==1.5.0",
+  "numpy==1.26.4",
+  "opencv-python==4.6.0.66",
+  "chardet==5.2.0",
+  "natocr==2.3.0"
+]
+
+[project.urls]
+Homepage = "https://gitee.com/bluepang2021/kyapp_project"
+Repository = "https://github.com/purewhite-88/applib"
+
+[project.scripts]
+kytest = "kytest.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["kyapp*"]
+
+[tool.setuptools.package-data]
+kyapp = ["running/*.yml"]
